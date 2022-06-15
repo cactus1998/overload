@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind output css -->
+    <style>
+        /* ultity */
+        .p-100\% {
+            padding-bottom: 100%;
+        }
+        .bg-size-70\% {
+            background-size: 70%;
+        }
+    </style>
+    <link href="css/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="stylesheet" href="css/source.css">
+    <style>
+        /* --------------------- scroll bar -----------------------*/
+        /* width */
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: white;
+            /* box-shadow: inset 0 0 100px rgb(255, 255, 255);  */
+            /* border-radius: 10px; */
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(200,200,200); 
+            border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a3a3a3; 
+        }
+
+        /* ------------------------ 特效用 ---------------------- */
+        
+
+        /* 排版用 */
+        .tittle-text {
+            font-size: 2.2rem;
+            letter-spacing: 0.45rem;
+        }
+
+        .authorContent_line_height {
+            line-height: 1.7;
+        }
+
+        /* author describe */
+        @media (min-width: 1024px) {
+            .author-describe {
+                width: 32vw;
+                margin: auto;
+            }
+            .author-describe h1 {
+                font-size: 5vw;
+                line-height: 1;
+            }
+            .author-describe h2 {
+                font-size: 2.6vw;
+                line-height: 1;
+            }
+            .author-describe h3 {
+                font-size: 1.6vw;
+                line-height: 3.6vw;
+            }
+        }
+
+        /* 垂直文字 */
+        .text-verticle {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <!-- banner -->
+        <section class="w-full h-screen bg-center bg-no-repeat bg-black bg-size-70% lg:bg-cover md:bg-fixed flex banner_bg relative">
+            <div class="absolute top-8 md:top-16 right-8 md:right-16 w-10 md:w-14">
+                <img class="w-full" src="img/logo_sign.png" alt="logo_sign">
+                <img class="w-full mt-5" src="img/logo_white.png" alt="logo_white">
+            </div>
+            <div class="m-auto text-white" style="height:509px">
+                <span class="text-center h-full text-verticle HelveticaNeue">MING JHE CAI</span>
+                <span class="text-center h-full tittle-text text-3xl md:text-4xl mx-5" style="writing-mode: vertical-rl;">石彫り芸術の新しい境界</span>
+            </div>
+            <a class="w-8 md:w-12 absolute top-8 md:top-16 left-8 md:left-16 flex flex-col items-center cursor-pointer">
+                <div class="w-full">
+                    <span class="w-full h-1 bg-white block"></span>
+                    <span class="w-full h-1 bg-white block mt-2"></span>
+                </div>
+                <span class="text-white text-verticle text-2xl md:text-4xl mt-2 md:mt-5 HelveticaNeue">MENU</span>
+            </a>
+            <div class="absolute bottom-0 left-1/2 text-white">
+                <span class="text-verticle text-base HelveticaNeue">SCROLL</span>
+            </div>
+        </section>
+
+        <!-- author -->
+        <section id="author" class="hidden lg:block relative w-full h-screen SourceHanSerif text-gray-700">
+            <div id="feature_curtain" class="w-full h-full absolute bg-cover bg-center bg-fixed z-10 banner_bg">
+                <div id="feature_curtain_filter" class="w-full h-full absolute z-0 opacity-0" style="background-color: black;">
+                </div>
+            </div>
+            <!-- 照片 與 describe -->
+            <div class="w-full h-full absolute inset-0 flex beige_bg">
+                <div class="flex basis-1/2">
+                    <!-- 照片 -->
+                    <span class="p-100% lg:pb-0 w-full bg-cover bg-center bg-top author_bg"></span>
+                </div>
+                <div class="basis-1/2 flex">
+                    <div class="author-describe my-auto">
+                        <h1 class="font-bold text-right">創作者-蔡明哲</h1>
+                        <h2 class="HelveticaNeue text-5xl mt-10 text-right">MING JHE CAI</h2>
+                        <h3 class="mt-24 text-4xl mt-16 indent-12 authorContent_line_height">
+                            素人工藝者與創作者，秉著對大自然「石頭」的熱愛而與孩子開始撿石十餘年，在撿石過程中，悟出撿石的人生哲學，繼而拜師，將一顆顆在大地佇足千萬年的石子，化作無言的禪子。
+                        </h3>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- 塞一段撐空間用 -->
+        <section class="hidden lg:block" style="height: 200vh">200VH</section>
+        <!-- author-static -->
+        <section id="author-static" class="relative w-full h-screen SourceHanSerif text-gray-700">
+            <!-- 照片 與 describe -->
+            <div class="w-full h-full absolute inset-0 flex flex-col lg:flex-row beige_bg">
+                <div class="flex basis-1/2 p-20 lg:p-0">
+                    <!-- 照片 -->
+                    <span class="p-100% lg:pb-0 w-full bg-cover bg-center bg-top author_bg"></span>
+                </div>
+                <div class="flex basis-1/2 p-20 lg:p-0">
+                    <div class="author-describe my-auto">
+                        <h1 class="font-bold text-4xl text-left lg:text-right">創作者-蔡明哲</h1>
+                        <h2 class="HelveticaNeue text-2xl mt-10 text-left lg:text-right">MING JHE CAI</h2>
+                        <h3 class="mt-24 text-base mt-16 indent-12 authorContent_line_height">
+                            素人工藝者與創作者，秉著對大自然「石頭」的熱愛而與孩子開始撿石十餘年，在檢石過程中，悟出檢石的人生哲學，繼而拜師，將一顆顆在大地佇足千萬年的石子，化作無言的禪子。
+                        </h3>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <section class="w-full h-screen beige_bg"></section>
+
+    <script src="js/scrooth.js"></script>
+    <script>
+        // DOM
+        const AUTHOR = document.querySelector('#author');
+        const FEATURE_CURTAIN = document.querySelector('#feature_curtain');
+        const FEATURE_CURTAIN_FILTER = document.querySelector('#feature_curtain_filter');
+
+        // 視窗相關
+        let pageHeight = window.innerHeight;
+        let pageDistance = window.pageYOffset;
+
+        // 
+        let nowPage = 0;
+        let isPageFeature = false;
+        let pageDirection = "down";
+
+
+        // 上一頁 ， stamp 用來當暫存
+        let lastPage = 0;
+        let stamp = 0;
+
+        // device width
+        let screen;
+
+        // 先檢查一次螢幕大小
+        if(window.matchMedia("(min-width: 1024px)").matches) {
+            screen = 'large';
+        }
+        else {
+            screen = 'small';
+        }
+        console.log(screen);
+        // 視窗resize事件
+        window.onresize = () => {
+            pageHeight = window.innerHeight;
+            // console.log(`pageHeight: ${pageHeight}`);
+            // console.log(screen);
+
+            // 檢查螢幕大小
+            // 小 => 大
+            if(window.matchMedia("(min-width: 1024px)").matches) {
+                if(screen == 'small'){
+                    location.reload();
+                }
+            }
+            // 大 => 小
+            else {
+                if(screen == 'large'){
+                    location.reload();
+                }
+            }
+        }
+
+        // 滾動事件
+        window.onscroll = () => {
+
+            if(screen == 'large') {
+                // 重抓到頂端的距離
+                pageDistance = window.pageYOffset;
+                console.log(`pageYOffset: ${pageDistance}`);
+    
+                // 當前是第幾頁
+                nowPage = Math.floor(pageDistance / pageHeight);
+                console.log(`nowPage: ${nowPage}`);
+    
+                // 重設 lastPage
+                setLastPage();
+                console.log(`lastPage: ${lastPage}`);
+    
+                // 如果當前頁面高度應該是Feature頁面
+                if(nowPage >= 1 && nowPage < 4) {
+                    if(isPageFeature == false) {
+                        feature(AUTHOR);
+                        isPageFeature = true;
+                    }
+                    let top = pageDistance - pageHeight;
+                    let rate = top / pageHeight;
+                    let percentage = (rate * 50).toFixed(3);
+                    // 0~50% (page 1 窗簾效果)
+                    if(nowPage == 1) {
+                        FEATURE_CURTAIN.style.width = `${100 - percentage}%`;
+                        FEATURE_CURTAIN_FILTER.style.opacity = rate;
+                    }
+                    // 50%~100% (page 2 淡入淡出效果)
+                    // 重設 top 跟 rate
+                    else if (nowPage == 2) {
+                        // page 2 窗簾寬度一定要是50%
+                        FEATURE_CURTAIN.style.width = '50%';
+                        // 從 nowPage == 3 來的，遮罩淡入
+                        if(lastPage == 3) {
+                            $("#feature_curtain").fadeIn();
+                        }
+                        // top = pageDistance - (2 * pageHeight);
+                        // rate = top / pageHeight;
+                        // FEATURE_CURTAIN_FILTER.style.opacity = rate;
+                    }
+                    // page 3
+                    else if (nowPage == 3) {
+                        // 從 nowPage == 2 來的，遮罩淡出露出作者圖片
+                        if(lastPage == 2) {
+                            $("#feature_curtain").fadeOut();
+                        }
+                        
+                    }
+                    console.log(percentage);
+                }
+                // 當前頁面高度不是Feature頁面
+                else if(nowPage < 1) {
+                    if(isPageFeature == true) {
+                        featureRelease(AUTHOR, 100, 0);
+                        isPageFeature = false;
+                    }
+                }
+                else if(nowPage >= 4) {
+                    if(isPageFeature == true) {
+                        featureRelease(AUTHOR, 50, 1);
+                        isPageFeature = false;
+                    }
+                }
+            }
+        }
+
+
+        function feature(feature) {
+            feature.classList.remove("relative");
+            feature.classList.add("fixed", "z-10", "inset-0"); 
+            
+        }
+        function featureRelease(feature, curtain_width, opacity) {
+            feature.classList.remove("fixed", "z-10", "inset-0");
+            feature.classList.add("relative");
+            // 寬度 透明度 初始化
+            FEATURE_CURTAIN.style.width = `${curtain_width}%`;
+            FEATURE_CURTAIN_FILTER.style.opacity = `${opacity}`;
+        }
+
+
+        function setLastPage() {
+            if(nowPage != stamp) {
+                lastPage = stamp;
+                stamp = nowPage;
+            }
+        }
+
+
+
+        const scroll = new Scrooth({
+            element: window,
+            strength: 10,
+            acceleration: 3.5,
+            deceleration: 0.975,
+        });
+    </script>
+    
+</body>
+</html>

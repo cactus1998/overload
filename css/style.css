@@ -427,7 +427,7 @@ body .gallery .gallerybox h2 {
   font-size: 60px;
   font-weight: 300;
   color: #a69e96;
-  margin-top: 75px;
+  margin-top: 165px;
   margin-left: 300px;
 }
 
@@ -503,7 +503,7 @@ body .gallery .swiperbox .black-box {
     width: 310px;
     height: 60px;
     font-size: 60px;
-    margin-top: -300px;
+    margin-top: -250px;
     margin-left: 60px;
   }
   body .gallery .swiperbox {
@@ -567,15 +567,15 @@ body .gallery .swiperbox .black-box {
     font-size: 80px;
   }
   body .gallery .gallerybox h2 {
-    width: 100px;
+    width: 150px;
     height: 40px;
     font-size: 40px;
-    margin-top: -268px;
+    margin-top: -223px;
     margin-left: 75px;
   }
   body .gallery .swiperbox {
     width: 100%;
-    height: 500px;
+    height: 40vh;
     position: relative;
   }
   body .gallery .swiperbox .swiper-pic {
@@ -627,12 +627,14 @@ body .mountain {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   width: 100%;
-  height: 1080px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 body .mountain .mountainfont {
@@ -688,7 +690,7 @@ body .mountain .mask2 {
     margin-left: 10vw;
   }
   body .mountain .mountainfont .len h2 {
-    font-size: 3 0px;
+    font-size: 30px;
     color: #808080;
     font-weight: normal;
   }
@@ -704,6 +706,9 @@ body .mountain .mask2 {
   }
   body .mountain .mask1 {
     margin-top: 20vh;
+  }
+  body .mountain .mask3 {
+    display: none;
   }
 }
 
@@ -729,6 +734,9 @@ body .mountain .mask2 {
     margin-top: 30vh;
     margin-right: 10px;
   }
+  body .mountain .mask3 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 375px) {
@@ -742,7 +750,7 @@ body .mountain .mask2 {
   }
   body .mountain .mountainfont .len {
     margin-left: 35vw;
-    margin-top: 32vh;
+    margin-top: 30vh;
   }
   body .mountain .mountainfont .len h2 {
     font-size: 35px;
@@ -769,7 +777,7 @@ body .mountain .mask2 {
   body .mountain .mask2 {
     margin-top: 20vh;
     width: 150vw;
-    margin-left: -20vw;
+    margin-left: 0vw;
     display: block;
     background: url("../img/山平板遮罩.png") no-repeat top center;
     background-size: cover;
@@ -781,13 +789,16 @@ body .mountain .mask2 {
             mask-position: 80% 75%;
     -webkit-mask-size: cover;
   }
+  body .mountain .mask3 {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
   body .mountain .mountainfont {
     width: 100%;
     height: 100vh;
-    margin-top: 0%;
+    margin-top: -10vh;
     font-family: KouzanBrushFont;
     position: absolute;
     white-space: nowrap;
@@ -800,7 +811,7 @@ body .mountain .mask2 {
     font-size: 35px;
     color: black;
     font-weight: 100;
-    line-height: 0.5em;
+    line-height: 1em;
   }
   body .mountain .mountainfont .len #len1 {
     margin-top: 0%;
@@ -820,18 +831,19 @@ body .mountain .mask2 {
     display: none;
   }
   body .mountain .mask2 {
-    margin-top: 44vh;
+    display: none;
+  }
+  body .mountain .mask3 {
+    margin-top: 30vh;
+    height: 100vh;
     width: 150vw;
-    margin-left: -20vw;
+    margin-left: 0vw;
     display: block;
     background: url("../img/山手機遮罩.png") no-repeat top center;
     background-size: cover;
     -webkit-mask: url("../img/山手機遮罩.png") no-repeat center center;
     mask: url("../img/山手機遮罩.png") no-repeat center center;
-    -webkit-mask-size: contain;
-            mask-size: contain;
-    -webkit-mask-position: 100% 55%;
-            mask-position: 100% 55%;
+    mask-size: contain;
     -webkit-mask-size: cover;
   }
 }
@@ -1064,6 +1076,7 @@ body .mountain .mask2 {
 @media (max-width: 1300px) and (min-width: 768px) {
   .process .titlebox {
     height: 110px;
+    margin-top: -18vh;
   }
   .process .titlebox h1 {
     font-size: 55px;
@@ -1160,7 +1173,7 @@ body .mountain .mask2 {
     margin-top: 10%;
   }
   .process .process01box .vdo .img_01 {
-    margin: auto;
+    margin: 0px;
   }
   .process .process01box .vdo .inc {
     position: absolute;
@@ -1218,7 +1231,7 @@ body .mountain .mask2 {
     height: 90%;
   }
   .process .process02box .vdo .img_02 {
-    margin: auto;
+    margin: 0px;
   }
   .process .process02box .vdo .inc {
     position: absolute;
@@ -1257,7 +1270,8 @@ body .mountain .mask2 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-bottom: -1vh;
   }
   .process .process01box .fontbox_01 {
     width: 100%;
@@ -1294,7 +1308,7 @@ body .mountain .mask2 {
     margin-top: 20%;
   }
   .process .process01box .vdo .img_01 {
-    margin: auto;
+    margin: 0px;
   }
   .process .process01box .vdo .inc {
     position: absolute;
@@ -1309,12 +1323,13 @@ body .mountain .mask2 {
     background-size: cover;
   }
   .process .process02box {
-    margin-top: 20%;
+    margin-top: 10%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 100px;
+    margin-bottom: -1vh;
   }
   .process .process02box .fontbox_02 {
     width: 100%;
@@ -1351,7 +1366,7 @@ body .mountain .mask2 {
     height: 100%;
   }
   .process .process02box .vdo .img_02 {
-    margin: auto;
+    margin: 0px;
   }
   .process .process02box .vdo .inc {
     position: absolute;
@@ -1510,7 +1525,7 @@ footer .footer-h1 {
 }
 
 footer input[type="text"] {
-  width: 490px;
+  width: 500px;
   height: 40px;
   padding: 5px auto;
   margin: auto;
@@ -1561,22 +1576,23 @@ footer .contain01 .tel {
 }
 
 footer .contain01 .tel .phone {
-  font-size: 24px;
+  font-size: 21px;
   margin: 0px;
   text-align: left;
 }
 
 footer .contain01 .tel .time {
-  font-size: 19px;
+  font-size: 17px;
   margin-top: 10px;
   text-align: left;
 }
 
 footer .contain01 .bar {
   width: 2px;
-  height: 60px;
+  height: 80px;
   background-color: white;
   margin-top: 25px;
+  margin-left: -50px;
 }
 
 footer .contain01 .btnbox {
@@ -1601,7 +1617,7 @@ footer .contain01 .btnbox input[type="submit"]:hover {
 }
 
 footer .contain01 .btnbox #button {
-  margin-top: 25px;
+  margin-top: 32.5px;
 }
 
 @media (max-width: 768px) and (min-width: 375px) {
@@ -1665,7 +1681,7 @@ footer .contain01 .btnbox #button {
             flex-direction: column;
   }
   footer {
-    height: 250px;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

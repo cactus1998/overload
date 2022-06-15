@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     background-image: url(../img/米色紙漿背景.jpeg);
     position: relative;
+
     //前面區塊
     .box {
         width: 100%;
@@ -425,6 +426,7 @@ body {
             }
         }
     }
+
     @media (max-width: 375px) {
         .overlord {
             .moonbox {
@@ -495,6 +497,7 @@ body {
         font-size: 14px;
         color: #000;
         margin-top: 25vh;
+
         // 藝廊區塊
         .gallerybox {
             width: 100%;
@@ -518,7 +521,7 @@ body {
                 font-size: 60px;
                 font-weight: 300;
                 color: #a69e96;
-                margin-top: 75px;
+                margin-top: 165px;
                 margin-left: 300px;
             }
         }
@@ -618,7 +621,7 @@ body {
                     height: 60px;
                     font-size: 60px;
 
-                    margin-top: -300px;
+                    margin-top: -250px;
                     margin-left: 60px;
                 }
             }
@@ -695,17 +698,17 @@ body {
                 }
 
                 h2 {
-                    width: 100px;
+                    width: 150px;
                     height: 40px;
                     font-size: 40px;
-                    margin-top: -268px;
+                    margin-top: -223px;
                     margin-left: 75px;
                 }
             }
 
             .swiperbox {
                 width: 100%;
-                height: 500px;
+                height: 40vh;
                 position: relative;
 
                 // 8方塊的效果
@@ -767,11 +770,15 @@ body {
     // 山
     .mountain {
         writing-mode: vertical-lr;
+
         width: 100%;
-        height: 1080px;
+        height: 100vh;
         display: flex;
         position: relative;
         overflow: hidden;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+
         .mountainfont {
             width: 100%;
             height: 100vh;
@@ -807,6 +814,7 @@ body {
                 color: #707070;
             }
         }
+
         .mask1 {
             background: url("../img/山電腦版.png") no-repeat top center;
             background-size: cover;
@@ -814,16 +822,18 @@ body {
             -webkit-mask: url("../img/山電腦版.png") no-repeat center center;
             -webkit-mask-size: contain;
         }
+
         .mask2 {
             display: none;
         }
+
         @media (max-width: 1500px) and (min-width: 900px) {
             .mountainfont {
                 .len {
                     margin-left: 10vw;
 
                     h2 {
-                        font-size: 3 0px;
+                        font-size: 30px;
                         color: #808080;
                         font-weight: normal;
                     }
@@ -842,10 +852,16 @@ body {
                     margin-right: 10px;
                 }
             }
+
             .mask1 {
                 margin-top: 20vh;
             }
+
+            .mask3 {
+                display: none;
+            }
         }
+
         @media (max-width: 900px) and (min-width: 769px) {
             .mountainfont {
                 .len {
@@ -870,11 +886,17 @@ body {
                     font-size: 100px;
                 }
             }
+
             .mask1 {
                 margin-top: 30vh;
                 margin-right: 10px;
             }
+
+            .mask3 {
+                display: none;
+            }
         }
+
         @media (max-width: 768px) and (min-width: 375px) {
             .mountainfont {
                 width: 100%;
@@ -886,7 +908,8 @@ body {
 
                 .len {
                     margin-left: 35vw;
-                    margin-top: 32vh;
+                    margin-top: 30vh;
+
                     h2 {
                         font-size: 35px;
                         color: black;
@@ -911,13 +934,15 @@ body {
                     color: #707070;
                 }
             }
+
             .mask1 {
                 display: none;
             }
+
             .mask2 {
                 margin-top: 20vh;
                 width: 150vw;
-                margin-left: -20vw;
+                margin-left: 0vw;
                 display: block;
                 background: url("../img/山平板遮罩.png") no-repeat top center;
                 background-size: cover;
@@ -927,12 +952,17 @@ body {
                 mask-position: 80% 75%;
                 -webkit-mask-size: cover;
             }
+
+            .mask3 {
+                display: none;
+            }
         }
+
         @media (max-width: 375px) {
             .mountainfont {
                 width: 100%;
                 height: 100vh;
-                margin-top: 0%;
+                margin-top: -10vh;
                 font-family: KouzanBrushFont;
                 position: absolute;
                 white-space: nowrap;
@@ -940,11 +970,12 @@ body {
                 .len {
                     margin-left: 40vw;
                     margin-top: 32vh;
+
                     h2 {
                         font-size: 35px;
                         color: black;
                         font-weight: 100;
-                        line-height: 0.5em;
+                        line-height: 1em;
                     }
 
                     #len1 {
@@ -965,21 +996,26 @@ body {
                     color: #707070;
                 }
             }
+
             .mask1 {
                 display: none;
             }
-            .mask2 {
-                margin-top: 44vh;
 
+            .mask2 {
+                display: none;
+            }
+
+            .mask3 {
+                margin-top: 30vh;
+                height: 100vh;
                 width: 150vw;
-                margin-left: -20vw;
+                margin-left: 0vw;
                 display: block;
                 background: url("../img/山手機遮罩.png") no-repeat top center;
                 background-size: cover;
                 -webkit-mask: url("../img/山手機遮罩.png") no-repeat center center;
                 mask: url("../img/山手機遮罩.png") no-repeat center center;
                 mask-size: contain;
-                mask-position: 100% 55%;
                 -webkit-mask-size: cover;
             }
         }
@@ -1123,6 +1159,7 @@ body {
         align-items: center;
         margin: auto;
         margin-bottom: 200px;
+
         .vdo {
             position: relative;
             width: 90%;
@@ -1196,7 +1233,7 @@ body {
     @media (max-width: 1300px) and (min-width: 768px) {
         .titlebox {
             height: 110px;
-
+            margin-top: -18vh;
             h1 {
                 font-size: 55px;
                 margin: auto;
@@ -1311,7 +1348,7 @@ body {
                 margin-top: 10%;
 
                 .img_01 {
-                    margin: auto;
+                    margin: 0px;
                 }
 
                 .inc {
@@ -1374,7 +1411,7 @@ body {
                 height: 90%;
 
                 .img_02 {
-                    margin: auto;
+                    margin: 0px;
                 }
 
                 .inc {
@@ -1418,8 +1455,9 @@ body {
         .process01box {
             flex-direction: column-reverse;
             width: 100%;
-            margin-top: 20%;
+            margin-top: 10%;
             // 把原本的block調
+            margin-bottom: -1vh;
 
             .fontbox_01 {
                 width: 100%;
@@ -1460,7 +1498,7 @@ body {
                 margin-top: 20%;
 
                 .img_01 {
-                    margin: auto;
+                    margin: 0px;
                 }
 
                 .inc {
@@ -1479,9 +1517,10 @@ body {
         }
 
         .process02box {
-            margin-top: 20%;
+            margin-top: 10%;
             flex-direction: column;
             margin-top: 100px;
+            margin-bottom: -1vh;
 
             .fontbox_02 {
                 width: 100%;
@@ -1522,7 +1561,7 @@ body {
                 height: 100%;
 
                 .img_02 {
-                    margin: auto;
+                    margin: 0px;
                 }
 
                 .inc {
@@ -1695,9 +1734,9 @@ footer {
     // input屬性設定
     input[type="text"] {
         // 500*40
-        width: 490px;
+        width: 500px;
         height: 40px;
-        padding:5px auto; 
+        padding: 5px auto;
 
         margin: auto;
         border: 0.5px rgb(255, 255, 255) solid;
@@ -1709,7 +1748,8 @@ footer {
         border-radius: 5px;
 
     }
-    input::placeholder{
+
+    input::placeholder {
         text-align: center;
     }
 
@@ -1727,16 +1767,17 @@ footer {
             color: white;
             justify-content: center;
             margin-top: 30px;
+
             .phone {
                 //38
 
-                font-size: 24px;
+                font-size: 21px;
                 margin: 0px;
                 text-align: left;
             }
 
             .time {
-                font-size: 19px;
+                font-size: 17px;
                 margin-top: 10px;
                 text-align: left;
             }
@@ -1745,9 +1786,10 @@ footer {
         // 4*60
         .bar {
             width: 2px;
-            height: 60px;
+            height: 80px;
             background-color: white;
             margin-top: 25px;
+            margin-left: -50px;
         }
 
         .btnbox {
@@ -1771,7 +1813,7 @@ footer {
             }
 
             #button {
-                margin-top: 25px;
+                margin-top: 32.5px;
             }
         }
     }
@@ -1812,6 +1854,7 @@ footer {
         .contain01 {
             width: 90%;
             margin-top: 25px;
+
             .tel {
                 .phone {
                     font-size: 12px;
@@ -1847,6 +1890,6 @@ footer {
     }
 
     footer {
-        height: 250px;
+        height: 300px;
     }
 }
